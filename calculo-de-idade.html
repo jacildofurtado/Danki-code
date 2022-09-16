@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var anoNascimento = prompt("Insira o ano do seu nascimento;");
+
+        while(anoNascimento >= 2022) {
+            alert('Por favor informe seu ano de nascimento corretamente!');
+            anoNascimento = prompt("Insira o ano do seu nascimento;");
+        }
+
+        var anoAtual = prompt("Que anos estamos?");
+
+        var idadeFinal = anoAtual - anoNascimento;
+
+        alert("Sua idade é "+idadeFinal);
+    </script>
+</body>
+</html>
