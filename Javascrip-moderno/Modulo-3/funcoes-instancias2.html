@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Pessoa() {
+            this.nome = 'Jacildo';
+            this.idade = 27;
+            this.printNome = function(numero){
+                alert(numero)
+            };
+            this.returnAnimal = function(animal){
+                return animal;
+            }
+        }
+
+        function Animal() {
+            this.nome = 'Cachorro';
+            this.raca = 'Caramelo';
+        }
+
+        var pessoa = new Pessoa();
+
+        var animal = new Animal();
+
+        animal.raca = 'Pastor Alemão';
+
+        alert(pessoa.returnAnimal(animal.raca));
+
+    </script>
+</body>
+</html>
