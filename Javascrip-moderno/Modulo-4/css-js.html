@@ -7,13 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="box"></div>
+    <!--<div id="box"></div>-->
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
 </body>
 <script>
+    /*
     var el = document.getElementById('box');
     el.style.width = '100px';
     el.style.height = '100px';
     el.style.backgroundColor = 'red';
     el.style.margin = 'auto';
+    */
+
+    var elementos = document.getElementsByClassName('box');
+    /*
+    var el = elementos[0];
+
+    el.style.width = '100px';
+    el.style.height = '100px';
+    el.style.backgroundColor = 'green';
+    el.style.margin = 'auto';
+    */
+   for(var i = 0; i < elementos.length; i++){
+    var el = elementos[i]
+    el.style.width = '100px';
+    el.style.height = '100px';
+    el.style.backgroundColor = 'green';
+    el.style.margin = 'auto';
+    el.style.marginTop = '10px'
+    el.style.borderWidth = 1;
+    el.style.borderColor = 'black';
+    el.style.borderStyle = 'solid';
+   }
 </script>
 </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+            margin-left: 0px;
+            cursor: pointer;
+        }
+        .animEsquerda {
+            transition: 1s;
+            margin-left: 100px;
+            background-color: red;
+        }
+        */
+
+        .conteudo > h2 > span{
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .conteudo > p {
+            overflow: hidden;
+            height: 13.1px;
+            transition: 1s;
+        }
+
+        .mostrar {
+            height: 180px !important;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="box"></div>-->
+
+    <div class="conteudo">
+        <h2>Título do conteúdo <span>Ver mais!</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis dolores laborum voluptates totam odio nulla quidem voluptatum fugiat, esse dolore commodi distinctio. Harum reprehenderit fugiat voluptates sit eius natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus minima eum animi reprehenderit consectetur vel, rerum nobis quos blanditiis, iusto soluta sed earum voluptatum quidem nam quasi sint, omnis dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eligendi excepturi nulla minima fugiat dolor, odio ratione iure doloremque corporis aspernatur eius sit labore recusandae, nesciunt voluptatibus voluptate earum consequuntur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum laboriosam architecto suscipit aspernatur ea? Hic deserunt ullam labore aspernatur quidem facilis inventore, temporibus suscipit sapiente repellendus! Inventore ea ad natus!</p>
+    </div>
+
+    <script>
+        /*
+        var box = document.querySelectorAll('.box')[0];
+        /*
+        setTimeout(()=>{
+            box.classList.add('animEsquerda');
+        },1000);
+       box.addEventListener('click', function(){
+        box.classList.add('animEsquerda');
+       })
+       */
+        var span = document.querySelector('.conteudo span');
+
+        span.addEventListener('click',function(){
+            var conteudo = document.querySelector('.conteudo p');
+
+            if(conteudo.classList.contains('mostrar')){
+                span.innerHTML = "Ver mais!";
+                conteudo.classList.remove('mostrar');
+            }else{
+                span.innerHTML = "Ocultar";
+                conteudo.classList.add('mostrar');
+            }
+
+        });
+
+    </script>
+</body>
+</html>
