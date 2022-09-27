@@ -33,13 +33,33 @@
        testes('Olá mundo',(texto)=>{
         alert(texto);
        });
-       */
+       
 
        const arr = ['Jacildo', 'Sofia', 'Ana', 'Maria', 'Isa'];
 
        const [a,b,...c] = arr;
 
        alert(c[0]);
+       
+       var nomes = [
+        {
+            nome: 'João'
+        },
+        {
+            nome: 'Felipe'
+        }
+       ]
+       const objetos = [...nomes,{
+        nome: 'Jacildo'
+       }];
+       console.log(objetos);
+       */
+
+       function testes(...numero){
+            console.log(numero[0][0]);
+       }
+
+       testes([1,2,3,4,5]);
         
 
 
