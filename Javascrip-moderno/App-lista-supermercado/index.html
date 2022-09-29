@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: rgb(36, 36, 133);
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+        .lista-cadastro{
+            display: flex;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+        .lista-cadastro input[type=text]{
+            flex: 1;
+            height: 40px;
+            padding-left: 20px;
+        }
+        .lista-produtos-single{
+            display: flex;
+            margin: 20px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .lista-produtos-single h3{
+            flex: 1;
+            padding: 0 20px;
+        }
+        h3.price-produto{
+            text-align: right;
+            font-size: 17px;
+        }
+        h3.price-produto > span{
+            background-color: rgb(128, 128, 185);
+            color: white;
+            padding: 8px 10px;
+            border-radius: 20px;
+        }
+        .soma-produto{
+            margin: 20px;
+        }
+
+        button{
+            margin-left: 20px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>App Lista de Supermercado</h2>
+    </header>
+    <div class="lista-cadastro">
+        <input type="text" placeholder="Nome do produto" name="nome_produto">
+        <input type="number" placeholder="Valor do produto" name="price" step="0.01" title="This shold be a number with up 2 decimal">
+        <input type="submit" value="Cadastrar" name="acao" onclick="cadastrar()" style="cursor: pointer;">
+    </div>
+    
+    <div class="lista-produtos">
+
+    </div>
+
+    <div class="soma-produto">
+        <h1>Total: R$0</h1>
+    </div>
+
+    <button name="limpar" onclick="limpar()">Limpar</button>
+
+    <script src="supermercado.js"></script>
+</body>
+</html>
