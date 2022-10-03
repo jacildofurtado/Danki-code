@@ -2,6 +2,54 @@ var elementos =  document.querySelectorAll('.player-options div > img');
 var playerOpt = "";
 var inimigoOpt = "";
 
+function validarVitoria(){
+
+    let vencedor = document.querySelector('.vencedor');
+
+    if(playerOpt == "Papel"){
+
+        if(inimigoOpt == "Papel"){
+            //empate
+            vencedor.innerHTML = "Empate"
+        }else if(inimigoOpt == "Tesoura"){
+            //inimigo ganhou
+            vencedor.innerHTML = "Derrota"
+        }else if(inimigoOpt == "Pedra"){
+            //jodador ganhou
+            vencedor.innerHTML = "Vitória"
+        }
+    }
+
+
+    if(playerOpt == "Pedra"){
+
+        if(inimigoOpt == "Pedra"){
+            //empate
+            vencedor.innerHTML = "Empate"
+        }else if(inimigoOpt == "Papel"){
+            //inimigo ganhou
+            vencedor.innerHTML = "Derrota"
+        }else if(inimigoOpt == "Tesoura"){
+            //jodador ganhou
+            vencedor.innerHTML = "Vitória"
+        }
+    }
+
+    if(playerOpt == "Tesoura"){
+
+        if(inimigoOpt == "Tesoura"){
+            //empate
+            vencedor.innerHTML = "Empate"
+        }else if(inimigoOpt == "Pedra"){
+            //inimigo ganhou
+            vencedor.innerHTML = "Derrota"
+        }else if(inimigoOpt == "Papel"){
+            //jodador ganhou
+            vencedor.innerHTML = "Vitória"
+        }
+    }
+}
+
 function resetInimigo(){
     const enemyOptions = document.querySelectorAll('.enemy-options div');
     for(var i = 0; i < enemyOptions.length; i++){
@@ -23,10 +71,12 @@ function inimigoJogar(){
         }
     }
 
+
     //alert(playerOpt);
     //alert(inimigoOpt);
-
+        validarVitoria();
 }
+
 
 function resetOpacityPlayer(){
     for(var i = 0; i < elementos.length; i++){
@@ -43,3 +93,4 @@ for(var i = 0; i < elementos.length; i++){
         inimigoJogar();
     });
 }
+
