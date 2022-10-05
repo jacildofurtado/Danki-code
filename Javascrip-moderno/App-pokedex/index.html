@@ -10,46 +10,70 @@
 <body>
     <main>
         <h2>Pokedex</h2>
-
+        <input id="quantidade" style="width:100%;height:40px;padding-left:10px;" type="text" name="quantidade" placeholder="Insira a quantidade de Pokemons">
         <section class="pokemon-boxes">
-
-            <div class="pokemon-box">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="">
-                <p>Ditto</p>
-            </div>
-
-            <div class="pokemon-box">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="">
-                <p>Ditto</p>
-            </div>
-
-            <div class="pokemon-box">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="">
-                <p>Ditto</p>
-            </div>
-
-            <div class="pokemon-box">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="">
-                <p>Ditto</p>
-            </div>
-
-            <div class="pokemon-box">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="">
-                <p>Ditto</p>
-            </div>
-
-            <div class="pokemon-box">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="">
-                <p>Ditto</p>
-            </div>
 
         </section>
     </main>
 
     <script>
-        fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
+        var quantidade = document.getElementById('quantidade');
+        quantidade.addEventListener('keyup', ()=>{
+            pegaPokemons(quantidade.value);
+        })
+
+        pegaPokemons(3)
+        
+        function pegaPokemons(quantidade){
+            fetch('https://pokeapi.co/api/v2/pokemon?limit=10'+quantidade)
         .then(response => response.json())
-        .then(allpokemon => console.log(allpokemon))
+        .then(allpokemon => {
+
+            var pokemons = [];
+
+            allpokemon.results.map((val)=>{
+
+
+                fetch(val.url)
+                .then(response => response.json())
+                .then(pokemonSingle =>{
+                    pokemons.push({nome:val.name, imagem:pokemonSingle.sprites.front_default});
+
+                    if(pokemons.length == quantidade){
+                        //finalizamos nossas requisições.
+
+                        /*
+                        <div class="pokemon-box">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="">
+                            <p>Ditto</p>
+                        </div>
+                        */
+
+                        //console.log(pokemons);
+
+                        var pokemonBoxes = document.querySelector('.pokemon-boxes');
+
+                        pokemonBoxes.innerHTML = "";
+
+                        pokemons.map(function(val){
+                            pokemonBoxes.innerHTML+=`
+                            
+                            <div class="pokemon-box">
+                                <img src="`+val.imagem+`" alt="">
+                                <p>`+val.nome+`</p>
+                            </div>
+                            
+                            `
+                        })
+                    }
+                })
+            })
+
+
+
+
+        })
+        }
     </script>
 </body>
 </html>
