@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas e respostas</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Qual o sobrenome do Naruto?</h1>
+    </div>
+
+    <form class="pergunta">
+        <span>Opção 1</span>
+        <input type="radio" name="pergunta1" value="correta">
+        <br>
+        <span>Opção 2</span>
+        <input type="radio" name="pergunta1" value="incorreta">
+        <br>
+        <span>Opção 3</span>
+        <input type="radio" name="pergunta1" value="incorreta">
+        <br>
+    </form>
+
+    <div class="title">
+        <h1>Qual o sobrenome da Sakura?</h1>
+    </div>
+
+    <form class="pergunta">
+        <span>Opção 1</span>
+        <input type="radio" name="pergunta1" value="correta">
+        <br>
+        <span>Opção 2</span>
+        <input type="radio" name="pergunta1" value="incorreta">
+        <br>
+        <span>Opção 3</span>
+        <input type="radio" name="pergunta1" value="incorreta">
+        <br>
+    </form>
+
+    <div class="title">
+        <h1>Qual o sobrenome da Hinata?</h1>
+    </div>
+
+    <form class="pergunta">
+        <span>Opção 1</span>
+        <input type="radio" name="pergunta1" value="correta">
+        <br>
+        <span>Opção 2</span>
+        <input type="radio" name="pergunta1" value="incorreta">
+        <br>
+        <span>Opção 3</span>
+        <input type="radio" name="pergunta1" value="incorreta">
+        <br>
+    </form>
+
+    <script>
+        var elementos = document.querySelectorAll('[type=radio]');
+
+        for(var i = 0; i < elementos.length; i++){
+            elementos[i].addEventListener('change', function(e){
+                let marcado = e.target.value;
+                if(marcado == 'correta'){
+
+                    let el = e.target.previousElementSibling.style.backgroundColor = "green";
+
+                }else if(marcado == 'incorreta'){
+                    let el = e.target.previousElementSibling.style.backgroundColor = "red";
+                }
+            })
+        }
+    </script>
+</body>
+</html>
