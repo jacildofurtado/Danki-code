@@ -95,3 +95,110 @@ section.main-bg p{
     font-size: 17px;
     margin-top: 15px ;
 }
+
+section.diferenciais{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.line-text{
+    position: relative;
+    display: inline-block;
+}
+
+.line-text > div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130px;
+    height: 3px;
+    background: #77c5bd;
+}
+
+.line-text h2{
+    color: #77c5bd;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.icones-diferenciais{
+    margin-top: 35px;
+}
+
+.box-icone-single{
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.box-icone-single h2{
+    color: #77c5bd;
+    font-weight: lighter
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.box-icone-single p{
+    color: #646464;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+section.sobre-equipe{
+    padding: 30px 0;
+    background: rgb(221, 221, 221);
+}
+
+section.sobre-equipe > .container{
+    display: flex;
+}
+
+.equipe-container{
+    width: 50%;
+}
+
+.sobre-container{
+    width: 50%;
+}
+
+.sobre-container p{
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.avatar-box{
+    display: flex;
+    margin-top: 20px;
+}
+
+.img-avatar{
+    display: inline-block;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+.decription-avatar{
+    width: calc(100%-70px);
+}
+
+.decription-avatar h3 {
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .box-icone-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
