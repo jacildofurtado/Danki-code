@@ -185,6 +185,7 @@ section.sobre-equipe > .container{
     height: 60px;
     border-radius: 50%;
     background-size: 100% 100%;
+    margin-right: 10px;
 }
 
 .decription-avatar{
@@ -192,7 +193,12 @@ section.sobre-equipe > .container{
 }
 
 .decription-avatar h3 {
-    padding: 0 10px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.decription-avatar p{
+    color: #646464;
 }
 
 
