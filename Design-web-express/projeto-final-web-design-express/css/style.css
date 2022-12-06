@@ -14,6 +14,15 @@
     padding: 0 2%;
 }
 
+.w50{
+    width: 50%;
+    float: left;
+}
+
+.center{
+    text-align: center;
+}
+
 .clear{clear: both;}
 
 /*Classes do meu site*/
@@ -158,6 +167,7 @@ section.sobre-equipe{
 
 section.sobre-equipe > .container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .equipe-container{
@@ -201,10 +211,52 @@ section.sobre-equipe > .container{
     color: #646464;
 }
 
+section.inscricao{
+    background: #77c5bd;
+    padding: 10px 0;
+}
+
+h2.inscricao-text{
+    font-weight: normal;
+    color: white;
+}
+
+.inscricao-form input[type=text]{
+    width: calc(100% - 120px);
+    height: 40px;
+    background: white;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.inscricao-form input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background: #1d6c64;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+}
+
 
 @media screen and (max-width: 768px) {
+    .w50{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .box-icone-single{
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .equipe-container{
+        width: 100%;
+    }
+
+    .sobre-container{
+        width: 100%;
+        margin-top: 20px;
     }
 }
