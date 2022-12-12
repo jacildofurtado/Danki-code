@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="palavra-chave,lorem,ipsum">
+    <!--Coloca aqui meta tags SEO-->
+    <title>Sobre</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h2>JC WEBMASTER</h2></div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </nav><!--menu-descktop-->
+
+            <nav class="menu-mobile">
+                <span class="material-symbols-outlined">menu</span>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </nav><!--menu-mobile-->
+            <div class="clear"></div>
+        </div><!--container-->
+    </header>
+
+    <section style="background-image: url(images/banner-sobre\ .jpg);" class="title-page">
+        <div class="overlay__title-page"></div>
+        <div class="container">
+            <h2>Sobre</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, architecto voluptatibus ullam blanditiis impedit eos deleniti dolor ut atque et placeat animi, tempora a hic, cum dolore. Porro, assumenda reiciendis!</p>
+        </div><!--container-->
+    </section><!--title-page-->
+
+    <section class="sobre__noticia">
+        <div class="container">
+            <div class="sobre__single_noticia">
+                <img src="images/paisagem-sobre.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quia quo nobis quibusdam eligendi molestiae voluptate iusto ipsum iste debitis recusandae, soluta quas necessitatibus odio a repellat eveniet doloribus incidunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae assumenda error quia eveniet pariatur accusamus quidem enim. Architecto nesciunt tempore voluptatum soluta error reprehenderit assumenda. Consequatur inventore ea at quis.</p>
+                <div class="clear"></div>
+            </div><!--sobre__single__noticia-->
+            <div class="paragrafo__single_noticia">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere corporis vitae nihil minus dolorem aut, temporibus facilis illum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus sit ipsa autem, illum consectetur similique deserunt earum nisi eos consequatur accusantium doloribus aspernatur vitae nobis sapiente placeat explicabo? Nisi, repellat.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere corporis vitae nihil minus dolorem aut, temporibus facilis illum.</p>
+            </div><!--paragrafo__single_noticia-->
+        </div><!--container-->
+    </section><!--sobre__noticia-->
+
+    <footer class="footer1">
+        <div class="container">
+
+            <div class="w33">
+                <h2>Aonde estamos?</h2>
+                <p><span class="material-symbols-outlined">home_pin</span>Travessa César Nascimento, 68</p>
+                <p><span class="material-symbols-outlined">call</span>(88)99658-8841</p>
+            </div><!--w33-->
+
+            <div class="w33">
+                <h2>Links Úteis</h2>
+                <a href="#">Github</a>
+                <a href="#">W3Schools</a>
+                <a href="#">Google</a>
+            </div><!--w33-->
+
+            <div class="w33">
+                <h2>Conecte-se conosco</h2>
+                <div class="icon">
+                    <img src="images/facebook.png" alt="">
+                    <img src="images/instagram.png" alt="">
+                </div>
+                    
+            </div><!--w33-->
+
+            <div class="clear"></div>
+        </div><!--container-->
+
+    </footer>
+
+    <footer class="footer2">
+        <div class="container">
+            <p>Todos os direitos reservados a <a href="#">Jacildo Furtado</a></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $('nav.menu-mobile span').click(function(){
+            $('nav.menu-mobile ul').slideToggle();
+        })
+    </script>
+</body>
+</html>

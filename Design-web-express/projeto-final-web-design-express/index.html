@@ -17,20 +17,37 @@
 <body>
     <header>
         <div class="container">
+
             <div class="logo"><h2>JC WEBMASTER</h2></div>
             <nav class="menu-desktop">
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="">Sobre</a>
+                        <a href="sobre.html">Sobre</a>
                     </li>
                     <li>
                         <a href="">Contato</a>
                     </li>
                 </ul>
             </nav><!--menu-descktop-->
+
+            <nav class="menu-mobile">
+                <span class="material-symbols-outlined">menu</span>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </nav><!--menu-mobile-->
+
             <div class="clear"></div>
         </div><!--container-->
     </header>
@@ -186,5 +203,12 @@
             <p>Todos os direitos reservados a <a href="#">Jacildo Furtado</a></p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $('nav.menu-mobile span').click(function(){
+            $('nav.menu-mobile ul').slideToggle();
+        })
+    </script>
 </body>
 </html>
