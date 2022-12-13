@@ -39,6 +39,11 @@ header{
     float: left;
 }
 
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
 h2{
     font-weight: normal;
     font-size: 25px;
@@ -425,6 +430,76 @@ section.sobre__noticia{
     font-weight: lighter;
 }
 
+/*Efeito paralax na página sobre*/
+section.paralax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../images/paisagem-paralax.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+section.paralax h2.chamada-paralax{
+    color: #77c5bd;
+    border: 1px solid #77c5bd;
+    padding: 5px 25px;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+section.paralax p{
+    color: white;
+    margin-top: 10px;
+}
+
+section.equipe{
+    padding: 40px 0;
+}
+
+.equipe-circles{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe-circle-single{
+    padding: 0 20px;
+    text-align: center;
+    width: 33.3%;
+}
+
+.equipe-circle-single h3{
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.equipe-circle-single p{
+    font-weight: lighter;
+}
+
+.avatar-single{
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+}
+
+.avatar-single-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #1d6c64;
+    background-size: 100% 100%;
+}
+
 @media screen and (max-width: 768px) {
     .w50,.w33{
         width: 100%;
@@ -473,5 +548,11 @@ section.sobre__noticia{
     }
     .card-single{
         padding: 10px;
+    }
+
+    .equipe-circle-single{
+        padding: 0px 20px;
+        margin-bottom: 30px;
+        width: 100%;
     }
 }
