@@ -500,6 +500,37 @@ section.equipe{
     background-size: 100% 100%;
 }
 
+section.sobre__final{
+    background-color: rgb(230, 230, 230);
+    border-top: 2px solid rgb(210, 210, 210);
+    padding: 20px 0;
+}
+
+section.sobre__final p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.card-text{
+    margin-top: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.card-text img{
+    max-width: 100%;
+}
+
+.card-text h3{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
 @media screen and (max-width: 768px) {
     .w50,.w33{
         width: 100%;
