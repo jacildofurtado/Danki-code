@@ -14,6 +14,16 @@
     padding: 0 2%;
 }
 
+.w60{
+    width: 60%;
+    float: left;
+}
+
+.w40{
+    width: 40%;
+    float: left; 
+}
+
 .w50{
     width: 50%;
     float: left;
@@ -26,6 +36,10 @@
 
 .center{
     text-align: center;
+}
+
+.selected a{
+    font-weight: 700;
 }
 
 .clear{clear: both;}
@@ -531,8 +545,95 @@ section.sobre__final p{
     font-weight: normal;
 }
 
+section.contato{
+    min-height: 600px;
+    padding: 30px 0;
+}
+
+section.contato .w50,
+section.contato .w100{
+    padding: 0 10px;
+}
+
+.formulario form{
+    margin-top: 10px;
+}
+
+.formulario h2{
+    background: #DDDDDD;
+    text-align: center;
+    color: #ACAC9D;
+    font-size: 15px;
+    font-weight: normal;
+    border-left: 3px solid #CCCCCC;
+    padding: 7px 0;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-left: 8px;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.tags-form{
+    padding-left: 50px;
+}
+
+.tags-form h2{
+    font-weight: normal;
+}
+
+.tags-form h2 span{
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+}
+
+.tags-form p{
+    font-weight: lighter;
+}
+
+.tags-form p.tag-contato{
+    color: white;
+    background: #77c5bd;
+    text-align: center;
+    margin-top: 10px;
+    padding: 8px 0;
+}
+
+.tags-form p.tag-contato span{
+    font-size: 20px;
+    margin-right: 7px;
+    position: relative;
+    top: 4px;
+}
 @media screen and (max-width: 768px) {
-    .w50,.w33{
+    .tags-form{
+        padding-left: 0px;
+    }
+
+    .formulario input[type=text],
+    .formulario input[type=email]{
+        margin-bottom: 0px;
+    }
+
+    .formulario textarea{
+        margin-bottom: 0px;
+    }
+
+    .w50,.w33,.w40,.w60,.w100{
         width: 100%;
         margin-bottom: 20px;
     }
