@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto, ícone e alinhamentos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{background: #ff4081;}
+
+        .container{
+            max-width: 960px;
+            padding: 0 2%;
+            margin: 0 auto;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        .servicos{
+            padding: 70px 0;
+        }
+
+        .container-single{
+            width: 33.3%;
+            float: left;
+            padding: 0 10px;
+        }
+
+        div.icon-round{
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 1px solid white;
+            position: relative;
+        }
+
+        div.icon-round span{
+            position: absolute;
+            font-size: 25px;
+            color: white;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        div.texto-descricao{
+            display: inline-block;
+            width: calc(100% - 60px);
+            padding: 0 10px;
+            color: white;
+        }
+
+        div.texto-descricao h2{
+            font-weight: normal;
+            font-size: 23px;
+        }
+
+        div.texto-descricao p{
+            font-size: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="servicos">
+        <div class="container">
+            <div class="container-single">
+                <div class="icon-round"><span class="material-symbols-outlined">sports_esports</span></div><div class="texto-descricao"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque ipsum, magnam quis, aliquid corporis expedita excepturi rem neque, nisi temporibus beatae quo repellat! Alias, ducimus natus. Recusandae, quo optio.</p></div>
+            </div><!--container-single-->
+            <div class="container-single">
+                <div class="icon-round"><span class="material-symbols-outlined">sports_esports</span></div><div class="texto-descricao"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque ipsum, magnam quis, aliquid corporis expedita excepturi rem neque, nisi temporibus beatae quo repellat! Alias, ducimus natus. Recusandae, quo optio.</p></div>
+            </div><!--container-single-->
+            <div class="container-single">
+                <div class="icon-round"><span class="material-symbols-outlined">sports_esports</span></div><div class="texto-descricao"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloremque ipsum, magnam quis, aliquid corporis expedita excepturi rem neque, nisi temporibus beatae quo repellat! Alias, ducimus natus. Recusandae, quo optio.</p></div>
+            </div><!--container-single-->
+            
+
+            <div class="clear"></div>
+        </div><!--container-->
+    </section><!--servicos-->
+</body>
+</html>
