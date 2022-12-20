@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer | UI/UX</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel = 'stylesheet' href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        footer{
+            padding: 20px 0;
+            width: 100%;
+            background: #ee6e73;
+        }
+
+        .footer-single{
+            width: 33.3%;
+            padding: 0 15px;
+            color: white;
+        }
+
+        .footer-single h2{
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        .footer-single p{
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48;
+        }
+
+        .footer-single p>span{
+            font-size: 15px;
+            text-align: center;
+            margin-right: 5px;
+        }
+
+        .fa-facebook{
+            font-size: 20px;
+            padding: 5px 10px 0 0;
+            text-decoration: none;
+            color: white;
+        }
+
+        .fa-google{
+            font-size: 20px;
+            padding: 5px 0 0 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-two{
+            background: #ee6e73;
+            padding: 8px 0;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="container">
+            <div class="footer-single">
+                <h2>Sobre</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div><!--footer-single-->
+            <div class="footer-single">
+                <h2>Telefone:</h2>
+                <p><span class="material-symbols-outlined">
+                    call
+                    </span>(88)99999-9999</p>
+                <p><span class="material-symbols-outlined">
+                    call
+                    </span>(88)99999-9999</p>
+            </div><!--footer-single-->
+            <div class="footer-single">
+                <h2>Conecte-se conosco:</h2>
+                <div class="social-media">
+                    <a href="www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="" class="fa fa-google"></a>
+                </div><!--social-media-->
+            </div><!--footer-single-->
+        </div><!--container-->
+
+        <div class="footer-two">
+            Todos os direitos reservados
+        </div>
+    </footer>
+</body>
+</html>
