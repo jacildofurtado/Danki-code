@@ -19,6 +19,15 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div><!--menu-->
+
+            <div class="menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div><!--menu-mobile-->
         </div><!--center-->
     </header>
 
@@ -39,6 +48,7 @@
                     <h2>Curso de Exemplo</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a nam cupiditate ut sed quibusdam in assumenda esse architecto. Totam voluptates cupiditate sed animi architecto illo? Reiciendis deleniti iusto debitis.</p>
                 </div><!--box-single-loja-->
+                <a href="">Conhecer o curso!</a>
             </div><!--loja-wrapper-->
 
             <div class="loja-wrapper">
@@ -47,6 +57,7 @@
                     <h2>Curso de Exemplo</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a nam cupiditate ut sed quibusdam in assumenda esse architecto. Totam voluptates cupiditate sed animi architecto illo? Reiciendis deleniti iusto debitis.</p>
                 </div><!--box-single-loja-->
+                <a href="">Conhecer o curso!</a>
             </div><!--loja-wrapper-->
 
             <div class="loja-wrapper">
@@ -55,33 +66,17 @@
                     <h2>Curso de Exemplo</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a nam cupiditate ut sed quibusdam in assumenda esse architecto. Totam voluptates cupiditate sed animi architecto illo? Reiciendis deleniti iusto debitis.</p>
                 </div><!--box-single-loja-->
-            </div><!--loja-wrapper-->
-
-            <div class="loja-wrapper">
-                <div class="box-single-loja">
-                    <img src="image/front-end-completo.png" alt="">
-                    <h2>Curso de Exemplo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a nam cupiditate ut sed quibusdam in assumenda esse architecto. Totam voluptates cupiditate sed animi architecto illo? Reiciendis deleniti iusto debitis.</p>
-                </div><!--box-single-loja-->
-            </div><!--loja-wrapper-->
-
-            <div class="loja-wrapper">
-                <div class="box-single-loja">
-                    <img src="image/desenvolvimento-web-completo.jpg" alt="">
-                    <h2>Curso de Exemplo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a nam cupiditate ut sed quibusdam in assumenda esse architecto. Totam voluptates cupiditate sed animi architecto illo? Reiciendis deleniti iusto debitis.</p>
-                </div><!--box-single-loja-->
-            </div><!--loja-wrapper-->
-
-            <div class="loja-wrapper">
-                <div class="box-single-loja">
-                    <img src="image/web-design-express.png" alt="">
-                    <h2>Curso de Exemplo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a nam cupiditate ut sed quibusdam in assumenda esse architecto. Totam voluptates cupiditate sed animi architecto illo? Reiciendis deleniti iusto debitis.</p>
-                </div><!--box-single-loja-->
+                <a href="">Conhecer o curso!</a>
             </div><!--loja-wrapper-->
 
         </div><!--center-->
     </section><!--loja-->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $('.menu-mobile i').click(function(){
+            $('.menu-mobile ul').slideToggle();
+        })
+    </script>
 </body>
 </html>

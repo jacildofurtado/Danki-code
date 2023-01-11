@@ -14,7 +14,7 @@ a{
 }
 
 .center{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2%;
 }
@@ -40,6 +40,8 @@ header > .center{
     text-align: right;
 }
 
+.menu-mobile{display: none;}
+
 .menu ul{list-style-type: none;}
 
 .menu li{
@@ -57,6 +59,7 @@ section.texto-chamada{
     padding: 30px 0;
     text-align: center;
     color: white;
+    z-index: 2;
 }
 
 section.texto-chamada i{
@@ -92,7 +95,7 @@ section.loja > .center{
 }
 
 .box-single-loja img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .box-single-loja h2{
@@ -105,4 +108,62 @@ section.loja > .center{
     padding: 15px 8px;
     font-size: 15px;
     color: rgb(10, 10, 10);
+}
+
+.loja-wrapper a{
+    color: white;
+    background: #5fb382;
+    padding: 10px 8px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .loja-wrapper{
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    .menu-mobile i{
+        color: white;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .menu-mobile ul{
+        display: none;
+        width: 100%;
+        list-style-type: none;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        text-align: center;
+        background: #6a4ea1;
+        z-index: 999;
+    }
+
+    .menu-mobile li{
+        padding: 8px 0;
+        border-bottom: 1px solid black;
+    }
+
+    .menu-mobile a{
+        color: white;
+    }
 }
