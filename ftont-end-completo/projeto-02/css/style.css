@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
@@ -22,8 +25,8 @@ html, body{
 /*****/
 
 header{
-    background-color: #D6D6D6;
-    padding: 30px 0;
+    background-color: rgb(180, 180, 180);
+    padding: 40px 0;
 }
 
 .logo-1{
@@ -69,10 +72,11 @@ section.cover-form{
     top: -5%;
     border: 1px solid #ccc;
     background-color: white;
+    box-shadow: 1px 1px 5px 2px rgba(180, 180, 180, 0.212);
 }
 
 .form-container h2{
-    background-color: rgb(234, 236, 239);
+    background-color: rgb(210,210,210);
     font-weight: normal;
     padding: 20px 15px;
     color: black;
@@ -99,7 +103,7 @@ section.cover-form{
 .form-container form input{
     width: 100%;
     height: 45px;
-    padding: 7px;
+    padding-left: 7px;
     border: 1px solid #ccc;
     line-height: 45px;
 }
