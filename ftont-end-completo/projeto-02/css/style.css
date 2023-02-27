@@ -18,7 +18,6 @@ html, body{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2%;
 }
 
 .clear{clear: both;}
@@ -53,11 +52,11 @@ header{
 
 section.cover-form{
     width: 100%;
-    padding: 0 2%;
 }
 
 .bg{
-    height: 500px;
+    position: relative;
+    height: 560px;
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: center;
@@ -65,12 +64,11 @@ section.cover-form{
 }
 
 .form-container{
-    float: right;
+    position: absolute;
+    right: 30px;
+    top: -2.5%;
     width: 400px;
-    height: 110%;
-    position: relative;
-    z-index: 2;
-    top: -5%;
+    height: 105%;
     border: 1px solid #ccc;
     background-color: white;
     box-shadow: 1px 1px 5px 2px rgba(180, 180, 180, 0.212);
@@ -85,7 +83,7 @@ section.cover-form{
 }
 
 .form-container form{
-    margin-top: 8px;
+    margin-top: 20px;
     padding: 15px;
 }
 
@@ -123,19 +121,17 @@ section.cover-form{
 section.chamada{
     z-index: 1;
     width: 100%;
-    position: relative;
-    top: -50px;
-    display: inline-block;
     text-align: center;
+
 }
 
 section.chamada .container{
-    padding: 50px 0;
-    background-color: #7c6757;
+    padding: 70px 0 50px 0;
+    background-color: #4764A6;
 }
 
 section.chamada h2{
-    width: 96%;
+    width: 98%;
     max-width: 700px;
     display: inline-block;
     color: white;
@@ -144,8 +140,78 @@ section.chamada h2{
 }
 
 section.chamada p{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
     color: white;
-    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+}
+
+.item-2-mosaico{
+    width: 40%;
+    padding: 60px 40px;
+    background-color: #9DBEE8;
+}
+
+.item-2-mosaico p{
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img{
+    width: 120px;
+}
+
+footer p{
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px){
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-1-mosaico{
+        width: 100%;
+        padding-top: 70%;
+    }
+
+    .item-2-mosaico{
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .bg{
+        text-align: center;
+        padding: 40px 0;
+        height: auto;
+    }
+
+    .form-container{
+        width: 96%;
+        height: auto;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 510px){
