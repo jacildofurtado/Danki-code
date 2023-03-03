@@ -25,8 +25,9 @@ html,body{
 header{
 	width: 100%;
 	height: 90vh;
+	min-height: 800px;
 	/*max-height: 700px;*/
-	padding: 40px 2%;
+	padding: 30px 2%;
 	background-position: center;
 	background-size: cover;
 	background-image: url(../images/capa.png);
@@ -36,7 +37,7 @@ header{
 header .logo{
 	float: left;
 	width: 180px;
-	height: 90px;
+	height: 60px;
 	background-color: #ccc;
 }
 
@@ -48,8 +49,54 @@ header nav.mobile-menu{
 	display: none;
 }
 
+header nav.mobile-menu:hover ul{
+	opacity: 1;
+}
+
+header nav.mobile-menu > span{
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.material-symbols-outlined {
+	color: white;
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 48
+}
+
+header nav.mobile-menu ul{
+	opacity: 0;
+	transition: 1s;
+	position: absolute;
+	left: 0;
+	top: 75px;
+	width: 100%;
+	background-color: white;
+	list-style-type: none;
+	text-align: center;
+}
+
+header nav.mobile-menu ul li{
+	border-bottom: 1px solid black;
+	padding: 8px 0;
+}
+
+header nav.mobile-menu ul li:hover{
+	background-color: rgb(223, 223, 223);
+}
+
+header nav.mobile-menu ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+
 header nav.desktop-menu ul{
 	list-style-type: none;
+	line-height: 60px;
 }
 
 header nav.desktop-menu li{
@@ -64,7 +111,7 @@ header nav.desktop-menu li a{
 
 .chamada1{
 	float: right;
-	margin: 140px 110px;
+	margin: 250px 110px;
 	max-width: 600px;
 }
 
@@ -113,7 +160,8 @@ section.sessao1 .container{
 
 .texto-sessao1 ul{
 	font-size: 15px;
-	list-style-position: inside;
+	list-style-position: outside;
+	padding-left: 15px;
 }
 
 .texto-sessao1 ul li{
@@ -145,13 +193,44 @@ section.sessao1 .container{
 	background-size: 100% 100%;
 }
 
+section.sessao2{
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: white;
+	text-align: center;
+}
+
+section.sessao2 .container{
+	max-width: 1000px;
+}
+
+section.sessao2 h2{
+	color: #472663;
+	font-weight: lighter;
+}
+
+section.sessao2 p{
+	margin-top: 30px;
+	max-width: 900px;
+	display: inline-block;
+}
+
+section.sessao2 img{
+	width: 100%;
+	margin-top: 40px;
+}
+
 @media screen and (max-width: 768px){
 
 	header{
 		width: 100%;
 		height: auto;
-		min-height: 90vh;
+		min-height: 70vh;
 		padding: 40px 2%;
+	}
+
+	header .logo{
+		height: 32px;
 	}
 
 	header nav.desktop-menu{
@@ -214,5 +293,9 @@ section.sessao1 .container{
 
 	.device-sessao1{
 		display: none;
+	}
+
+	section.sessao2{
+		padding-top: 40px;
 	}
 }
