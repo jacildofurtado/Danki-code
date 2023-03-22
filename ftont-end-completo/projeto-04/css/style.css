@@ -53,6 +53,31 @@ header nav.menu-desktop ul li{
 header nav.menu-mobile{
     display: none;
     float: right;
+    width: 28px;
+    height: 28px;
+    margin-top: 7px;
+    background-image: url(../images/menu-mobile.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+header nav.menu-mobile ul{
+    display: none;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+}
+
+nav.menu-mobile ul li{
+    text-transform: uppercase;
+}
+
+header nav.menu-mobile ul li{
+    padding: 10px 0;
 }
 
 header ul a{
@@ -173,6 +198,60 @@ section.perfil-container .texto-perfil p{
     margin-top: 8px;
 }
 
+section.videos{
+    padding: 50px 0;
+}
+
+section.videos .box-video{
+    float: left;
+    width: 33.3%;
+    padding-top: calc(33.3% * 0.6);
+    position: relative;
+    border: 5px solid white;
+}
+
+section.videos iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.tratamentos{
+    padding: 70px 0;
+}
+
+section.tratamentos .tratamento-container{
+    float: left;
+    width: 33.3%;
+}
+
+section.tratamentos > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.tratamentos > .container{
+    padding: 80px 0;
+}
+
+.tratamento-single{
+    padding: 20px;
+}
+
+.tratamento-single h2{
+    font-size: 18px;
+    color: #737373;
+}
+
+.tratamento-single p{
+    padding: 10px 0;
+    font-size: 13px;
+    color: #b4b4b4;
+}
+
 @media screen and (max-width: 768px){
     header nav.menu-desktop{
         display: none;
@@ -212,6 +291,10 @@ section.perfil-container .texto-perfil p{
         padding: 30px 2%;
     }
 
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
+    }
+
     section.perfil-container .perfil-wraper2{
         /*
         position: absolute;
@@ -222,6 +305,8 @@ section.perfil-container .texto-perfil p{
         width: 100%;
         height: 100%;
         */
+        height: auto;
+        position: static;
         display: inline-block;
         text-align: center;
     }
@@ -239,12 +324,30 @@ section.perfil-container .texto-perfil p{
         padding: 0 30px;
         text-align: justify;
     }
+
+    section.videos{
+        text-align: center;
+    }
+
+    section.videos .box-video{
+        float: none;
+        width: 70%;
+        display: inline-block;
+        padding-top: calc(70% * 0.6);
+        border: 5px solid white;
+    }
+    
 }
 
 @media screen and (max-width: 580px){
     section.perfil-container .img-perfil{
         width: 80%;
         padding-top: 110%;
+    }
+
+    section.videos .box-video{
+        width: 100%;
+        padding-top: calc(100% * 0.6);
     }
 }
 
