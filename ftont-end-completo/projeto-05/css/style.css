@@ -170,7 +170,7 @@ section.veiculos-destaque .container{
     background-color: black;
 }
 
-section.veiculos-destaque .line-titulo h2{
+.line-titulo h2{
     position: relative;
     display: inline-block;
     background-color: white;
@@ -310,6 +310,85 @@ section.veiculos-destaque .line-titulo h2{
     font-size: 23px;
 }
 
+section.contato{
+    padding: 80px 2%;
+}
+
+section.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+section.contato .input-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+section.contato input[type=text]{
+    width: 100%;
+    border: 1px solid #CCC;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+section.contato textarea{
+    width: 100%;
+    border: 1px solid #CCC;
+    height: 120px;
+    padding: 15px;
+    resize: none;
+}
+
+section.contato input[type=submit]{
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav ul li{
+    float: left;
+    font-size: 19px;
+    padding: 0 16px;
+    font-style: italic;
+}
+
+footer nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    float: right;
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+}
+
 @media screen and (max-width: 1400px) {
     section.banner{
         background-size: 90% auto;
@@ -343,6 +422,10 @@ section.veiculos-destaque .line-titulo h2{
 }
 
 @media screen and (max-width: 768px){
+    .w50{
+        width: 100%;
+    }
+
     section.banner{
         background-size: cover;
         background-position: center;
@@ -365,6 +448,18 @@ section.veiculos-destaque .line-titulo h2{
     .half1,.half2{
         width: 100%;
         padding: 80px 4%;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer p{
+        float: none;
     }
 }
 
