@@ -392,7 +392,7 @@ footer p{
 /*Inicio da página de Venda*/
 
 section.venda{
-    padding: 90px 0;
+    padding: 90px 2%;
     min-height: 90%;
 }
 
@@ -406,7 +406,7 @@ section.venda{
 }
 
 .search1{
-    width: 300px;
+    width: 90%x;
 }
 
 .search1 h2{
@@ -432,7 +432,7 @@ section.venda{
     width: 30%;
     height: 20px;
     border-radius: 20px;
-    background-color: rgb(200, 200, 200);
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(200,200,200))
 }
 
 .pointer-barra{
@@ -442,8 +442,8 @@ section.venda{
     left: calc(30% - 13px);
     top: -3px;
     border-radius: 8px;
-    background-color: rgb(210, 210, 210);
-    border: 1px solid black;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(180,180,180));
+    border: 1px solid #4444;
     cursor: pointer;
 }
 
@@ -490,12 +490,37 @@ section.venda{
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
+    position: relative;
+}
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{
+    display: block;
+}
+
+.circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 .form-venda-wraper span{
     vertical-align: top;
     display: inline-block;
     padding: 0 10px;
+}
+
+.vitrine-venda{
+    float: left;
+    width: 70%;
+}
+
+.vitrine-venda .vitrine-destaque{
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -569,6 +594,21 @@ section.venda{
 
     footer p{
         float: none;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search2{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .vitrine-venda{
+        width: 100%;
+        text-align: center;
     }
 }
 
