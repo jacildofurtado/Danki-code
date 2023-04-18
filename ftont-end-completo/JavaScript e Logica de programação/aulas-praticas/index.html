@@ -11,13 +11,25 @@
 
     <script>
         window.onload = function(){
-            var nome;
-            var idade;
-            nome = "Jacildo";
-            idade = 24;
+            var produtos = [pc1 = {}, pc2 = {}, pc3 = {}]
 
-            alert("olá " +nome);
-            alert('Você tem '+idade+" anos")
+            pc1.placaMae = "LGA123" ;
+            pc1.processador = "I5";
+            pc1.Ram = 16;
+            pc1.GPU = "RTX 4090";
+
+            pc2.placaMae = "BAG123" ;
+            pc2.processador = "I7";
+            pc2.Ram = 32;
+            pc2.GPU = "RTX 3050";
+
+            pc3.placaMae = "CDA123" ;
+            pc3.processador = "I3";
+            pc3.Ram = 8;
+            pc3.GPU = "GTX 1650";
+
+
+            alert(produtos[2].GPU);
         }
 
     </script>
