@@ -23,7 +23,7 @@ $(function(){
 
 });
 
-*/
+
 
 $(function(){
     
@@ -48,4 +48,13 @@ $(function(){
     }
 
     validarFormulario();
+});
+
+*/
+
+$(function(){
+    
+     
+
+
 });

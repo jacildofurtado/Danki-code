@@ -10,11 +10,8 @@ html, body{
     height: 100%;
 }
 
-.artigo1{
-    background-color: rgb(210, 210, 210);
-}
-
-.artigo2{
-    margin-top: 100px;
-    background-color: rgb(210, 210, 210);
+.box{
+    width: 500px;
+    padding: 20px;
+    background-color: #ccc;
 }
