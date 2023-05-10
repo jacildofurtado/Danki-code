@@ -53,7 +53,7 @@ $(function(){
 */
 
 $(function(){
-    
+    /*
      var el = $('.box');
      var meutexto = 'Olá Mundo!';
 
@@ -65,4 +65,45 @@ $(function(){
 
     $('input[type=text]').val('Olá Mundo!');
     $('textarea').text('Olá mundo!');
+    
+
+    $('input[type=button]').click(function(){
+        var str = $('input[type=text]').val();
+        //split separa nossa string com base no delimitador.
+        //var var2 = v.split("@");
+        //console.log(var2);
+
+        //substr recorta a nossa string.
+        //console.log(str.substr(1,4));
+        var splitstr = str.split("@");
+        if(splitstr[1] == 'hotmail.com'){
+            $('input[type=text]').css('opacity', '0');
+        }else{
+            console.log("A condição não bateu");
+        }
+    });
+    */
+
+    //função append() para adicionar conteúdo/elementos no final do elemento que selecionamos.
+    //$('.box div').append('<h3>Meu elemento adicionado dinamicamente.</h3>')
+
+    //var el = $('<h3>Meu novo conteúdo</h3>').appendTo('.box');
+    //el.css('color', 'red');
+
+    //$('.box').prepend('<h3>Meu novo conteúdo</h3>');
+
+    //var el = $('<h3>Meu novo conteúdo</h3>').prependTo($('.box')).css('color', 'red');
+
+    //var t = '<p>Meu conteúdo após a div box</p>';
+    //$('.box').after(t);
+
+    //$('.box').before(t);
+
+    //$(t).insertAfter($('.box')).css('color', 'green');
+    //$(t).insertBefore($('.box')).css('color', 'red');
+
+    setTimeout(function(){
+        $('.box').eq(1).remove();
+    },3000);
+    
 });
