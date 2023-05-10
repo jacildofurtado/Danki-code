@@ -54,7 +54,15 @@ $(function(){
 
 $(function(){
     
-     
+     var el = $('.box');
+     var meutexto = 'Olá Mundo!';
 
+     el.html('<div class="teste">'+meutexto+'</div>');
+     el.html(el.html()+'<h1 class="texto1">Meu texto via JavaScript!</h1>');
 
+    $('.box2').text('<div></div>');
+    $('.box2').text($('.box2').text() + "Olá Mundo!");
+
+    $('input[type=text]').val('Olá Mundo!');
+    $('textarea').text('Olá mundo!');
 });
