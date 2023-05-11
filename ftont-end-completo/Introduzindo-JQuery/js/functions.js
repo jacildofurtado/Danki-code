@@ -82,7 +82,7 @@ $(function(){
             console.log("A condição não bateu");
         }
     });
-    */
+   
 
     //função append() para adicionar conteúdo/elementos no final do elemento que selecionamos.
     //$('.box div').append('<h3>Meu elemento adicionado dinamicamente.</h3>')
@@ -106,4 +106,36 @@ $(function(){
         $('.box').eq(1).remove();
     },3000);
     
+
+    $('body').on('click', 'a', function(){
+        alert('Olá mundo!');
+    });
+
+    setTimeout(function(){
+    $('body').html('<a href="">Meu link!</a>');
+    }, 3000);
+    
+
+    var func = function(){
+        $('input[type=text]').eq($(this).index()).css('background', 'red');
+    };
+
+    //$('input[type=text]').keyup(func);
+    $('input[type=text]').keydown(func);
+
+     */
+
+    
+
+    $('.form_contato').submit(function(){
+        var container = $('.container');
+        var content = 'Nome: ' + $('input[name=nome]').val() +
+        '<hr>Email: ' + $('input[name=email]').val() +
+        '<hr>Telefone: ' + $('input[name=telefone]').val();
+
+        container.html(content);
+
+
+        return false;
+    })
 });
