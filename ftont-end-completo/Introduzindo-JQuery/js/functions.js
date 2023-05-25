@@ -123,7 +123,7 @@ $(function(){
     //$('input[type=text]').keyup(func);
     $('input[type=text]').keydown(func);
 
-     */
+    
 
     
 
@@ -138,4 +138,57 @@ $(function(){
 
         return false;
     })
+
+    
+
+    $('.box1').fadeOut(2000,function(){
+        $('.box2').fadeIn(3000,function(){
+            console.log('Terminamos nossa animação')
+        });
+    });
+     
+
+
+    $('.box1').click(function(){
+        $('.box2').slideToggle();
+    })
+
+
+    
+    var timer;
+    var timeOut = function(){
+        $('.box2').animate({
+            'width' : '40%',
+            'height' : '500px',
+            'marginLeft': '100px',
+            'paddingTop' : '200px'
+        },2000)
+    }
+
+    $('body').click(function(){
+        alert('Animação com timeout foi cancelada!');
+        clearTimeout(timer);
+    })
+
+    $('.box1').animate({
+        'width' : '40%',
+        'height' : '500px',
+        'marginLeft': '100px',
+        'paddingTop' : '200px'
+    },2000, function(){
+        timer = setTimeout(timeOut,3000);
+    });
+
+    var timer;
+
+    $('body').click(function(){
+        console.log('Cancelado');
+        clearInterval(timer);
+    })
+
+    timer = setInterval(function(){
+        alert('oi');
+    },3000)
+
+        */
 });
