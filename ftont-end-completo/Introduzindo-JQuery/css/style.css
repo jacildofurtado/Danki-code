@@ -26,10 +26,8 @@ html, body{
     background-color: white;
     max-width: 400px;
     padding: 80px 2%;
-    height: 60%;
-    min-height: 380px;
-    max-height: 700px;
-    width: 94%;
+    padding: 80px 2%;
+    width: calc(94% - 32px);
     position: absolute;
     left: 50%;
     top: 50%;
