@@ -54,9 +54,11 @@ header nav.mobile-menu{
 	display: none;
 }
 
+/*
 header nav.mobile-menu:hover ul{
 	opacity: 1;
 }
+*/
 
 header nav.mobile-menu > span{
 	font-size: 32px;
@@ -73,8 +75,8 @@ header nav.mobile-menu > span{
 }
 
 header nav.mobile-menu ul{
-	opacity: 0;
-	transition: 1s;
+	display: none;
+	/*transition: 1s;*/
 	position: absolute;
 	left: 0;
 	top: 75px;
