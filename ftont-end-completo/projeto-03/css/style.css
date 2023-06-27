@@ -266,10 +266,20 @@ section.sessao3 .wraper-part1{
 	padding: 140px 0 90px 0;
 }
 
+.scrollEquipe{
+	max-width: 600px;
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+.scroll-wraper{
+	width: 100%;
+}
+
 .sobre-autor{
 	float: left;
-	max-width: 600px;
-	padding-left: 30px;
+	width: 100%;
+	padding: 0 20px;
 }
 
 .titulo-autor{
@@ -320,7 +330,7 @@ section.sessao3 .wraper-part1{
 .slider-bullets{
 	width: 100%;
 	float: left;
-	padding-left: 30px;
+	padding-left: 40px;
 	margin-top: 8px;
 }
 
