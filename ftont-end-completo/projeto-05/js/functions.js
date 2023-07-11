@@ -29,9 +29,29 @@ $(function(){
 
             //TODO: ajustar o formato do preço!
             nowPrice = currentValue/100 * maxPrice;
+            nowPrice = priceformat(nowPrice);
             $('.preco_pesquisa').html('R$'+nowPrice);
         }
     });
+
+    function priceformat(nowPrice){
+        nowPrice = nowPrice.toFixed(2);
+        price_arr = nowPrice.split('.');
+
+        var newPrice = tFormat(price_arr);
+
+        return newPrice;
+    }
+
+    function tFormat(price_arr){
+        if(price_arr[0] < 1000){
+            return price_arr[0]+','+price_arr[1];
+        }else if(price_arr[0] < 10000){
+            return price_arr[0][0]+'.'+price_arr[0].substr(1,price_arr[0].length)+','+price_arr[1];
+        }else{
+            return price_arr[0][0]+price_arr[0][1]+'.'+price_arr[0].substr(2,price_arr[0].length)+','+price_arr[1];
+        }
+    }
 
     function disableTextSelection(){
         $('body').css('webkit-user-select', 'none');
