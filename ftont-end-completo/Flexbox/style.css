@@ -5,32 +5,7 @@
 }
 
 /*Classes gerais - Framework*/
-.text-white{
-    color: white;
-}
 
-.gold{
-    background-color: gold;
-}
-
-.light-blue{
-    background-color: #00A3D9;
-}
-
-div.w50{
-    width: 50%;
-}
-
-section.container{
-    width: 100%;
-}
-
-div.flex{
-    display: flex;
-    max-width: 960px;
-    padding: 0 2%;
-    margin: 0 auto;
-}
 
 /*Classes específicas para nosso site*/
 header.topo-site{
@@ -54,10 +29,20 @@ header.topo-site a{
     text-decoration: none;
 }
 
-.left{
-    text-align: left;
+.slider{
+    min-height: 600px;
 }
 
-.right{
-    text-align: right;
+.slider p{
+    font-size: 30px;
+    display: inline-block;
+    border-bottom: 4px solid white;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.promo{
+    padding: 40px 0;
 }

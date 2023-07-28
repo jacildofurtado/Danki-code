@@ -1,0 +1,58 @@
+.text-white{
+    color: white;
+}
+
+.gold{
+    background-color: gold;
+}
+
+.light-blue{
+    background-color: #00A3D9;
+}
+
+div.w50{
+    width: 50%;
+}
+
+div.w100{
+    width: 100%;
+}
+
+div.w33{
+    width: 33.3%;
+}
+
+section.container{
+    width: 100%;
+}
+
+div.flex{
+    display: flex;
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+
+@media screen and (max-width: 760px){
+    div.w50, div.w33{
+        width: 100%;
+    }
+
+    .left,.right,.center{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
