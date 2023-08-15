@@ -87,3 +87,120 @@ nav.desktop a{
 	color: white;
 	text-decoration: none;
 }
+
+.conteudo-header{
+	position: relative;
+	z-index: 2;
+	max-width: 700px;
+	margin: 110px 0;
+}
+
+.conteudo-header h2{
+	color: white;
+	font-weight: lighter;
+	font-size: 44px;
+}
+
+.conteudo-header h2 > span{
+	color: #2692FF;
+}
+
+.conteudo-header p{
+	color: white;
+	margin-top: 18px;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.conteudo-header a{
+	display: block;
+	width: 177px;
+	height: 44px;
+	background: #2692FF;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 20px;
+	line-height: 44px;
+	border-radius: 20px;
+}
+
+.chamada-planos{
+	width: 100%;
+	text-align: center;
+	padding: 27px 2%;
+	background: rgb(220, 220, 220);
+}
+
+.chamada-planos h2{
+	display: inline-block;
+	border-top: 2px solid #2692FF;
+	color: #2692FF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 25px;
+}
+
+.box-planos{
+	padding: 40px 0;
+}
+
+.box-planos > .center{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box-planos-single{
+	width: 33.3%;
+	padding: 0 40px;
+}
+
+.box-planos-wraper{
+	width: 100%;
+	border: 1px solid #ccc;
+	min-height: 300px;
+	-webkit-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+	box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+}
+
+.box-planos-single h2{
+	background: #2692FF;
+	color: white;
+	text-align: center;
+	padding: 3px;
+	font-weight: lighter;
+}
+
+.pontos-plano{
+	padding: 8px 0 15px 0;
+}
+
+.preco{
+	text-align: center;
+	margin-top: 10px;
+	padding: 15px 0;
+}
+
+.preco h2{
+	font-size: 24px;
+	color: #777777;
+	padding: 0 20px;
+	background-color: transparent;
+	display: inline-block;
+	border-top: 1px solid #ccc;
+}
+
+.box-planos-single p{
+	margin-left: 20px;
+	color: #777777;
+	font-size: 17px;
+	margin-top: 8px;
+}
+
+@media screen and (max-width: 768px){
+	.box-planos-single{
+		width: 100%;
+		margin: 10px 0;
+	}
+}
