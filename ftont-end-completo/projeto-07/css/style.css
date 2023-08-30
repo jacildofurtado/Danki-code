@@ -24,7 +24,7 @@ nav .brand-logo {
 }
 
 .custom-title h2{
-  font-size: 30px;
+  font-size: 26px;
   color: #777;
   z-index: 2;
   background: white;
@@ -41,4 +41,16 @@ nav .brand-logo {
   z-index: 1;
   top: 55px;
   left: 0;
+}
+
+.offset-equipe{
+  position: relative;
+  top: 83px;
+}
+
+@media screen and (max-width: 599px){
+  .offset-equipe{
+    position: relative;
+    top: 0;
+  }
 }
