@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+.logo{
+    float: left;
+}
+
+header{
+    padding: 10px 2%;
+}
+
+nav.menu-desktop{
+    float: right;
+}
